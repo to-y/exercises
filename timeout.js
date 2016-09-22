@@ -1,9 +1,10 @@
+function printLoop (i) {
+  setTimeout(function () {
+    console.log(i);
+  }, 1000 + 1);
+}
 
 for (var i = 0; i < 3; i++) {
-  setTimeout( function() {
-
-  }, console.log(1000 + i));
-
-  console.log(i);
-
+  printLoop(i);
 }
+
